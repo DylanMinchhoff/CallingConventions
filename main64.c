@@ -32,10 +32,7 @@ int main(int argc, char* argv) {
     ccmemset64(buff, '0', 20);
     ccmemset64(buff + 20, '\n', 20);
     ccmemset64(buff + 21, 0, 20);
-    // buff[21] = '\n';
-    // buff[22] = '\0';
     printf(buff);
-    // init_stackFrames();
 
     printf("Before function");
     
@@ -55,8 +52,8 @@ int main(int argc, char* argv) {
     printf("173888 : %d\n", ccatoi64("173888"));
     printf("-23hj123 : %d\n", ccatoi64("-23hj123"));
 
-    printf("control: %d\n", exampleMany(1,1,2,2,3,3,2));
-    printf("actual: %d\n", ccmanyArgs64(1,1,2,2,3,3,2));
+    printf("c many args: %d\n", exampleMany(1,1,2,2,3,3,2));
+    printf("cc many args: %d\n", ccmanyArgs64(1,1,2,2,3,3,2));
 
     printf("End function");
     return 0;

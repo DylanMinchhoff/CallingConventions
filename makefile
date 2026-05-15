@@ -9,7 +9,7 @@ ASMFLAGS64=-f win64
 CFLAGS32=-g
 ASMFLAGS32=-f win32
 
-all: main64
+all: main64 main32
 
 cc_64.o: cc_64.asm
 	$(ASM) $(ASMFLAGS64) cc_64.asm -o cc_64.o
